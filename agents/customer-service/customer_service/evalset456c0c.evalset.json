@@ -1,0 +1,49 @@
+[
+  {
+    "name": "caseec1943",
+    "data": [
+      {
+        "query": "Hi, how are you",
+        "expected_tool_use": [],
+        "expected_intermediate_agent_responses": [],
+        "reference": "Hi Alex, I'm doing great, thanks for asking! Welcome back. I see you've been a valued customer since June 2022. Is there anything I can help you with today for your backyard garden?\n"
+      },
+      {
+        "query": "yes, i would like to buy some new tools",
+        "expected_tool_use": [],
+        "expected_intermediate_agent_responses": [],
+        "reference": "Okay! To make sure I don't recommend something you already have, would you mind if I quickly check your cart?\n"
+      },
+      {
+        "query": "yes of course",
+        "expected_tool_use": [
+          {
+            "tool_name": "access_cart_information",
+            "tool_input": {
+              "customer_id": "123"
+            }
+          }
+        ],
+        "expected_intermediate_agent_responses": [],
+        "reference": "Okay, I've checked your cart and see you already have Standard Potting Soil and General Purpose Fertilizer. What kind of tools are you looking for today? Are you thinking of anything specific, or just browsing?\n"
+      },
+      {
+        "query": "im just browsing",
+        "expected_tool_use": [],
+        "expected_intermediate_agent_responses": [],
+        "reference": "Okay! Based on your past purchases, I see you've bought a gardening trowel, pruning shears and gardening gloves. Are you looking for something similar or something different this time? Also, since you have a medium sized backyard garden with full sun exposure and you like to grow both flowers and vegetables, I can give you some recommendations.\n"
+      },
+      {
+        "query": "something for the flowers, ",
+        "expected_tool_use": [],
+        "expected_intermediate_agent_responses": [],
+        "reference": "Okay! To give you the best recommendations, could you tell me what kind of flowers you're planning to plant? Or, if you're not sure, what do you have in mind - like sun-loving annuals, perennials, a specific color, etc.?\n"
+      }
+    ],
+    "initial_session": {
+      "state": {},
+      "app_name": "customer_service",
+      "user_id": "user"
+    }
+  }
+]
